@@ -25,12 +25,8 @@ const router = createBrowserRouter(
           element={<PostDetailPage />}
           loader={postDetailLoader}
         />
+        <Route path="new" element={<NewPostPage />} action={newPostAction} />
       </Route>
-      <Route
-        path="/blog/new"
-        element={<NewPostPage />}
-        action={newPostAction}
-      />
     </Route>
   )
 );
